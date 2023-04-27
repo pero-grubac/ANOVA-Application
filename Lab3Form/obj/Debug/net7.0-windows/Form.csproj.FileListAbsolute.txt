@@ -1,0 +1,23 @@
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\bin\Debug\net7.0-windows\Form.exe
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\bin\Debug\net7.0-windows\Form.deps.json
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\bin\Debug\net7.0-windows\Form.runtimeconfig.json
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\bin\Debug\net7.0-windows\Form.dll
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\bin\Debug\net7.0-windows\Form.pdb
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\bin\Debug\net7.0-windows\MathNet.Numerics.dll
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\bin\Debug\net7.0-windows\ANOVA i kontrasti.dll
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\bin\Debug\net7.0-windows\ANOVA i kontrasti.pdb
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Form.csproj.AssemblyReference.cache
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Lab3Form.RezultatForm.resources
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Lab3Form.StartForm.resources
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Lab3Form.UpisForm.resources
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Form.csproj.GenerateResource.cache
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Form.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Form.AssemblyInfoInputs.cache
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Form.AssemblyInfo.cs
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Form.csproj.CoreCompileInputs.cache
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Form.csproj.CopyComplete
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Form.dll
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\refint\Form.dll
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Form.pdb
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\Form.genruntimeconfig.cache
+C:\Users\Acer i3 6006u SSD\Downloads\Performanse računarskih sistema\Lab\Lab3\Lab3Form\obj\Debug\net7.0-windows\ref\Form.dll
