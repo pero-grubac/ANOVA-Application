@@ -135,9 +135,9 @@ namespace Lab3
 
         public void IzracunajVarijacijeIVarijanse(Double[][] matrix)
         {
-            for (int j = 0; j < this.k; j++)
+            for (int j = 0; j < k; j++)
             {
-                for (int i = 0; i < this.n; i++)
+                for (int i = 0; i < n; i++)
                 {
                     SSE += Math.Pow((matrix[i][j] - srVrKolone[j]), 2.0);
                     SST += Math.Pow((matrix[i][j] - ukupnaSrVrijednost), 2.0);

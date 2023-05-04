@@ -44,6 +44,7 @@ namespace Lab3Form
             anovaVjerovatnoca.Size = new Size(125, 27);
             anovaVjerovatnoca.TabIndex = 0;
             anovaVjerovatnoca.TextAlign = HorizontalAlignment.Center;
+            anovaVjerovatnoca.TextChanged += anovaVjerovatnoca_TextChanged;
             // 
             // alt1
             // 
@@ -52,6 +53,7 @@ namespace Lab3Form
             alt1.Size = new Size(125, 27);
             alt1.TabIndex = 1;
             alt1.TextAlign = HorizontalAlignment.Center;
+            alt1.TextChanged += alt1_TextChanged;
             // 
             // button1
             // 
@@ -80,7 +82,7 @@ namespace Lab3Form
             label2.Name = "label2";
             label2.Size = new Size(110, 20);
             label2.TabIndex = 4;
-            label2.Text = "Broj alternativa";
+            label2.Text = "Broj alternative";
             label2.Click += label2_Click;
             // 
             // StartForm

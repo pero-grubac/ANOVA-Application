@@ -181,8 +181,8 @@ namespace Lab3Form
 
         private void GenerateMatrixFields()
         {
-            int numRows = anova.K;
-            int numCols = anova.N;
+            int numRows = anova.N;
+            int numCols = anova.K;
 
             // Clear any existing controls from the matrix container panel
             matrixContainerPanel.Controls.Clear();

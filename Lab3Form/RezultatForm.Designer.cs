@@ -25,18 +25,18 @@ namespace Lab3Form
         public RezultatForm(Anova a)
         {
             InitializeComponent();
-            label11.Text = "SSA=" + a.SSA1.ToString("0.0000");
-            label12.Text = "SSE=" + a.SSE1.ToString("0.0000");
-            label13.Text = "SSR=" + a.SST1.ToString("0.0000");
+            label11.Text = "SSA=" + (a.SSA1).ToString("F5");
+            label12.Text = "SSE=" + (a.SSE1).ToString("F5");
+            label13.Text = "SSR=" + (a.SST1).ToString("F5");
             label14.Text = "k-1=" + a.DfAlt;
             label15.Text = "k(n-1)=" + a.DfErr;
             int x = (a.K * a.N) - 1;
             label16.Text = "kn-1=" + x;
-            label17.Text = "Sa^2=" + a.VarSa.ToString("0.0000");
-            label18.Text = "Se^2=" + a.VarSe.ToString("0.0000");
-            label19.Text = a.F_Test.ToString("0.0000") + "";
-            label20.Text = a.F_Table.ToString("0.0000") + "";
-            label21.Text = "[" + a.Interval.getItem1().ToString("0.0000") + " ; " + a.Interval.getItem2().ToString("0.0000") + "]";
+            label17.Text = "Sa^2=" + (a.VarSa).ToString("F5");
+            label18.Text = "Se^2=" + (a.VarSe).ToString("F5");
+            label19.Text = (a.F_Test).ToString("F5") + "";
+            label20.Text = a.F_Table.ToString("F5") + "";
+            label21.Text = "[" + (a.Interval.getItem1()).ToString("F5") + " ; " + (a.Interval.getItem2()).ToString("F5") + "]";
         }
         #region Windows Form Designer generated code
 

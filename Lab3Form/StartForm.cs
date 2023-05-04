@@ -23,5 +23,15 @@
         {
 
         }
+
+        private void anovaVjerovatnoca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void alt1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
