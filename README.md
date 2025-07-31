@@ -34,9 +34,5 @@
         <li>Export functionality for saving results in CSV or PDF format.</li>
         <li>Multi-language support for broader accessibility.</li>
     </ul>
-    <h2>💻 Contributions</h2>
-    <p>
-        Contributions are welcome! If you have ideas or improvements for the application, feel free to open an issue or submit a pull request.
-    </p>
 </body>
 </html>
