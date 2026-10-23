@@ -1,0 +1,136 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+                    xmlns:vm="clr-namespace:AnovaApp.Desktop.ViewModels">
+
+  <!-- Brushes that the Fluent theme does not provide. Colors stay readable in light and dark mode. -->
+  <SolidColorBrush x:Key="PositiveBarBrush" Color="#2F80ED" />
+  <SolidColorBrush x:Key="NegativeBarBrush" Color="#F2994A" />
+
+  <FontFamily x:Key="IconFont">Segoe Fluent Icons, Segoe MDL2 Assets</FontFamily>
+
+  <!-- A surface that groups related content. -->
+  <Style x:Key="Card" TargetType="Border">
+    <Setter Property="Background" Value="{DynamicResource CardBackgroundFillColorDefaultBrush}" />
+    <Setter Property="BorderBrush" Value="{DynamicResource CardStrokeColorDefaultBrush}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="8" />
+    <Setter Property="Padding" Value="20,16" />
+  </Style>
+
+  <Style x:Key="CardTitle" TargetType="TextBlock">
+    <Setter Property="FontSize" Value="15" />
+    <Setter Property="FontWeight" Value="SemiBold" />
+    <Setter Property="Foreground" Value="{DynamicResource TextFillColorPrimaryBrush}" />
+    <Setter Property="Margin" Value="0,0,0,12" />
+  </Style>
+
+  <Style x:Key="Caption" TargetType="TextBlock">
+    <Setter Property="FontSize" Value="12" />
+    <Setter Property="Foreground" Value="{DynamicResource TextFillColorSecondaryBrush}" />
+    <Setter Property="TextWrapping" Value="Wrap" />
+  </Style>
+
+  <!-- Explains an invalid input, right below it. -->
+  <Style x:Key="ErrorText" TargetType="TextBlock" BasedOn="{StaticResource Caption}">
+    <Setter Property="Foreground" Value="{DynamicResource SystemFillColorCriticalBrush}" />
+    <Setter Property="Margin" Value="0,-4,0,12" />
+  </Style>
+
+  <Style x:Key="FieldLabel" TargetType="TextBlock">
+    <Setter Property="FontSize" Value="13" />
+    <Setter Property="Foreground" Value="{DynamicResource TextFillColorSecondaryBrush}" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+
+  <Style x:Key="MetricValue" TargetType="TextBlock">
+    <Setter Property="FontSize" Value="22" />
+    <Setter Property="FontWeight" Value="SemiBold" />
+    <Setter Property="Foreground" Value="{DynamicResource TextFillColorPrimaryBrush}" />
+  </Style>
+
+  <Style x:Key="TableCellText" TargetType="TextBlock">
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+
+  <Style x:Key="Icon" TargetType="TextBlock">
+    <Setter Property="FontFamily" Value="{StaticResource IconFont}" />
+    <Setter Property="FontSize" Value="14" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+
+  <!-- Small square button of a "−  3  +" stepper. -->
+  <Style x:Key="StepperButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+    <Setter Property="Width" Value="32" />
+    <Setter Property="Height" Value="32" />
+    <Setter Property="Padding" Value="0" />
+    <Setter Property="FontFamily" Value="{StaticResource IconFont}" />
+    <Setter Property="FontSize" Value="11" />
+  </Style>
+
+  <!-- Toolbar button: no frame until hovered. -->
+  <Style x:Key="ToolbarButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="Padding" Value="10,6" />
+    <Setter Property="Margin" Value="2,0" />
+  </Style>
+
+  <!-- Coloured banner that states the conclusion of a test. -->
+  <Style x:Key="Verdict" TargetType="Border">
+    <Setter Property="CornerRadius" Value="8" />
+    <Setter Property="Padding" Value="16,12" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Background" Value="{DynamicResource SystemFillColorNeutralBackgroundBrush}" />
+    <Setter Property="BorderBrush" Value="{DynamicResource CardStrokeColorDefaultBrush}" />
+    <Style.Triggers>
+      <DataTrigger Binding="{Binding IsSignificant}" Value="True">
+        <Setter Property="Background" Value="{DynamicResource SystemFillColorSuccessBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource SystemFillColorSuccessBrush}" />
+      </DataTrigger>
+    </Style.Triggers>
+  </Style>
+
+  <Style x:Key="VerdictIcon" TargetType="TextBlock" BasedOn="{StaticResource Icon}">
+    <Setter Property="FontSize" Value="20" />
+    <Setter Property="Margin" Value="0,2,12,0" />
+    <Setter Property="VerticalAlignment" Value="Top" />
+    <Setter Property="Text" Value="&#xE946;" />
+    <Setter Property="Foreground" Value="{DynamicResource TextFillColorSecondaryBrush}" />
+    <Style.Triggers>
+      <DataTrigger Binding="{Binding IsSignificant}" Value="True">
+        <Setter Property="Text" Value="&#xE930;" />
+        <Setter Property="Foreground" Value="{DynamicResource SystemFillColorSuccessBrush}" />
+      </DataTrigger>
+    </Style.Triggers>
+  </Style>
+
+  <!-- Confidence level: pick a preset or type any value. Tag is true while the typed value is invalid. -->
+  <Style x:Key="ConfidenceBox" TargetType="ComboBox" BasedOn="{StaticResource {x:Type ComboBox}}">
+    <Setter Property="Width" Value="108" />
+    <Setter Property="IsEditable" Value="True" />
+    <Setter Property="IsTextSearchEnabled" Value="False" />
+    <Setter Property="ToolTip" Value="Pick a level or type your own, for example 97.5" />
+    <Style.Triggers>
+      <Trigger Property="Tag">
+        <Trigger.Value>
+          <sys:Boolean>True</sys:Boolean>
+        </Trigger.Value>
+        <Setter Property="BorderBrush" Value="{DynamicResource SystemFillColorCriticalBrush}" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="ToolTip" Value="{x:Static vm:MainViewModel.ConfidenceHint}" />
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+
+  <!-- Header of a grid column: an editable alternative name. -->
+  <Style x:Key="HeaderTextBox" TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+    <Setter Property="FontWeight" Value="SemiBold" />
+    <Setter Property="MinWidth" Value="0" />
+    <Setter Property="Padding" Value="6,4" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0,0,0,1" />
+  </Style>
+
+</ResourceDictionary>

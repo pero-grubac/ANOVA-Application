@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AnovaApp.Core/AnovaApp.Core.csproj" />
+    <Project Path="src/AnovaApp.Desktop/AnovaApp.Desktop.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AnovaApp.Core.Tests/AnovaApp.Core.Tests.csproj" />
+  </Folder>
+</Solution>
