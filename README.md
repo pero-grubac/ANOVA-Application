@@ -13,7 +13,7 @@
 
 **One-factor analysis of variance on your desktop: type or paste the measurements, and the F-test, the effects and a contrast between any two alternatives update as you type.**
 
-<img src="readme_assets/demo.gif" alt="ANOVA Application demo: clearing the grid, pasting measurements from a spreadsheet, raising the confidence to 99%, editing values and comparing two alternatives" width="900">
+<img src="readme_assets/demo.gif" alt="ANOVA Application demo: editing two measurements and watching the F-test update, raising the confidence to 99%, then comparing Heapsort with Quicksort in the contrast panel" width="900">
 
 </div>
 
